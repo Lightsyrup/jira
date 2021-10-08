@@ -1,2 +1,2 @@
 # jira
-jira 仙姑学习
+jira 项目学习
