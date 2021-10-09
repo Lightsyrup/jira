@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* 添加一行注释*/}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
