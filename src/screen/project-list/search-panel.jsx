@@ -1,22 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-export const SearchPanel = () => {
-  const [param, setParam] = useState({
-    name: '',
-    personId: '',
-  })
-  const [users, setUsers] = useState([]) //使用数组存放用户名称
-  const [list, setList] = useState([])
-
-  // 请求项目列表接口。当param 改变的时候进行获取
-  useEffect(() => {
-    fetch('').then(async (response) => {
-      // 如果if里面的条件为真就执行
-      if (response.ok) {
-        setList(await response.json())
-      }
-    })
-  }, [param])
+export const SearchPanel = ({param,setParam}) => {
+  const [users, setUsers] = useState([]) //使用数组存放用户名称O
 
   return (
     <from>
